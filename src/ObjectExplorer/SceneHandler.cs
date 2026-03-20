@@ -111,7 +111,7 @@ namespace UnityExplorer.ObjectExplorer
 
             // Finally, update the root objects list.
             if (SelectedScene != null && ((Scene)SelectedScene).IsValid())
-                CurrentRootObjects = RuntimeHelper.GetRootGameObjects((Scene)SelectedScene);
+                CurrentRootObjects = ((Scene)SelectedScene).GetRootGameObjects(); //RuntimeHelper.GetRootGameObjects((Scene)SelectedScene);
             else
             {
                 UnityEngine.Object[] allObjects = RuntimeHelper.FindObjectsOfTypeAll(typeof(GameObject));

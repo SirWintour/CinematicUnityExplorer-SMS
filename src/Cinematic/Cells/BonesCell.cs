@@ -53,7 +53,14 @@ namespace UnityExplorer.UI.Panels
         private void ExpandOrCollapseBoneTree(){
             if (IsTreeExpanded()){
                 // Collapse
-                List<BoneTree> treesToRemove = boneTree.childTrees.Select(t => t.flatten()).SelectMany(l => l).ToList();
+                //List<BoneTree> treesToRemove = boneTree.childTrees.Select(t => t.flatten()).SelectMany(l => l).ToList();
+                List<BoneTree> treesToRemove = new List<BoneTree>();
+                foreach (var child in boneTree.childTrees)
+                {
+                    var flat = child.flatten();
+                    if (flat != null)
+                        treesToRemove.AddRange(flat);
+                }
                 Owner.boneTrees = Owner.boneTrees.Except(treesToRemove).ToList();
                 expandBonesButton.ButtonText.text = "▶";
                 expandBonesText.text = "Expand bones";

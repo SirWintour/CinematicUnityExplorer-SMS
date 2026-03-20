@@ -148,10 +148,14 @@
 
   <!-- BIE il2cpp Interop -->
   <ItemGroup Condition="'$(Configuration)'=='BIE_Cpp_CoreCLR' or '$(Configuration)'=='BIE_Unity_Cpp_CoreCLR'">
-    <Reference Include="UniverseLib">
+    <!--<Reference Include="UniverseLib">
       <HintPath>..\UniverseLib\Release\UniverseLib.Il2Cpp.Interop\UniverseLib.BIE.IL2CPP.Interop.dll</HintPath>
       <Private>True</Private>
-    </Reference>
+    </Reference>-->
+	  <Reference Include="UniverseLib">
+		  <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\core\Tobey\UniverseLib.BIE.IL2CPP.Interop.dll</HintPath>
+		  <Private>True</Private>
+	  </Reference>
   </ItemGroup>
 
   <!-- ML il2cpp Interop -->
@@ -241,11 +245,11 @@
   </ItemGroup>
   <ItemGroup Condition="'$(Configuration)'=='BIE_Unity_Cpp_CoreCLR'">
     <Reference Include="BepInEx">
-      <HintPath>..\lib\net472\BepInEx\build647+\BepInEx.Core.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\core\BepInEx.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="BepInEx.IL2CPP">
-      <HintPath>..\lib\net472\BepInEx\build647+\BepInEx.Unity.IL2CPP.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\core\BepInEx.Unity.IL2CPP.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -263,86 +267,86 @@
   <!-- Il2Cpp Unhollower -->
   <ItemGroup Condition="'$(Configuration)'=='ML_Cpp_net6' or '$(Configuration)'=='ML_Cpp_net472' or '$(Configuration)'=='STANDALONE_Cpp' or '$(Configuration)'=='BIE_Cpp'">
     <Reference Include="Il2Cppmscorlib">
-      <HintPath>..\lib\unhollowed\Il2Cppmscorlib.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\Il2Cppmscorlib.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Il2CppSystem.Core">
-      <HintPath>..\lib\unhollowed\Il2CppSystem.Core.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\Il2CppSystem.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\lib\unhollowed\UnityEngine.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>..\lib\unhollowed\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.AudioModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\lib\unhollowed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\lib\unhollowed\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.PhysicsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\lib\unhollowed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.TextRenderingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>..\lib\unhollowed\UnityEngine.UI.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>..\lib\unhollowed\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.UIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\lib\unhollowed\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <!-- Il2Cpp Interop -->
   <ItemGroup Condition="'$(Configuration)'=='BIE_Cpp_CoreCLR' or '$(Configuration)'=='BIE_Unity_Cpp_CoreCLR' or '$(Configuration)'=='ML_Cpp_CoreCLR'">
     <Reference Include="Il2Cppmscorlib">
-      <HintPath>..\lib\interop\Il2Cppmscorlib.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\Il2Cppmscorlib.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Il2CppSystem.Core">
-      <HintPath>..\lib\interop\Il2CppSystem.Core.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\Il2CppSystem.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\lib\interop\UnityEngine.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>..\lib\interop\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.AudioModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\lib\interop\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\lib\interop\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.PhysicsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\lib\interop\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.TextRenderingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>..\lib\interop\UnityEngine.UI.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>..\lib\interop\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.UIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\lib\interop\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\bepinex\interop\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
